@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Git Sync skill icon">
+  <defs>
+    <linearGradient id="git-sync-bg-large" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0E172A"/>
+      <stop offset="1" stop-color="#09101D"/>
+    </linearGradient>
+    <radialGradient id="git-sync-glow-large" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(112 34) rotate(128) scale(134 122)">
+      <stop stop-color="#22C55E" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="160" height="160" rx="35" fill="url(#git-sync-bg-large)"/>
+  <rect width="160" height="160" rx="35" fill="url(#git-sync-glow-large)"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="54" font-weight="800" fill="#22C55E">GS</text>
+</svg>

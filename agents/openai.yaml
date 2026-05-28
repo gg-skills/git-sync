@@ -1,0 +1,12 @@
+interface:
+  display_name: GG → Git Sync → Workspace Synchronization
+  short_description: Pull from or push to origin across root repo and configured submodules safely
+  icon_small: ./assets/icon-small.svg
+  icon_large: ./assets/icon-large.png
+  brand_color: '#22C55E'
+  default_prompt: >-
+    Use git-sync when the user wants to sync a multi-submodule git workspace with origin in
+    either direction: pulling latest changes inbound (merge-based, submodule-first, with
+    dirty-workspace checkpointing) or publishing local commits outbound (commit then push, submodules
+    before root, with pre-push inbound reconciliation). Reference git-sync/SKILL.md when
+    cross-referencing this skill.
