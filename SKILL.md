@@ -82,7 +82,7 @@ git push
 # --- Verification (both directions) ---
 
 # Check sync completeness (12-item checklist)
-npx tsx skills/git-sync/scripts/check-sync-completeness.ts --session <dir>
+npx tsx .agents/skills/git-sync/scripts/check-sync-completeness.ts --session <dir>
 ```
 
 ## Sync Quality Checklist

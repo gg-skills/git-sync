@@ -13,8 +13,8 @@
  * Drift note: `skills/git-sync/SKILL.md` Quick Commands still mention `--session`;
  * this script only evaluates the cwd repository using the eight hard-coded checklist rows here.
  *
- * @testing CLI: from the repository root, `npx tsx skills/git-sync/scripts/check-sync-completeness.ts` and confirm stdout lists git probes, aggregate score, and eight checklist rows with status icons.
- * @testing CLI: from the repository root, `npx tsx skills/git-sync/scripts/check-sync-completeness.ts --json` and confirm stdout ends with a JSON object containing `checklist`, `score`, `maxScore`, and `canFinalize`.
+ * @testing CLI: from the repository root, `npx tsx .agents/skills/git-sync/scripts/check-sync-completeness.ts` and confirm stdout lists git probes, aggregate score, and eight checklist rows with status icons.
+ * @testing CLI: from the repository root, `npx tsx .agents/skills/git-sync/scripts/check-sync-completeness.ts --json` and confirm stdout ends with a JSON object containing `checklist`, `score`, `maxScore`, and `canFinalize`.
  * @testing CLI: from the repository root, `npm run file-overview-standards:target-brief -- --file skills/git-sync/scripts/check-sync-completeness.ts` and confirm the structural brief reports no issues.
  *
  * @see skills/git-sync/SKILL.md - git-sync skill narrative and operator checklist whose eight gates this script scores heuristically from cwd `git` subprocess probes before operators declare sync work complete.
