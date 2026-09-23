@@ -82,6 +82,7 @@ git push
 # --- Verification (both directions) ---
 
 # Check sync completeness (12-item checklist)
+# Runner alternatives: bunx tsx / pnpm dlx tsx / deno run -A npm:tsx / node --import tsx / yarn dlx tsx
 npx tsx .agents/skills/git-sync/scripts/check-sync-completeness.ts --session <dir>
 ```
 
@@ -312,3 +313,5 @@ behind its upstream, and the root repo records the published submodule `HEAD` SH
 - `.gitmodules`
 - `references/inbound-contract.md`
 - `references/outbound-contract.md`
+
+[^rt]: `npx tsx` accepts any standard runner — `bunx tsx`, `pnpm dlx tsx`, `deno run -A npm:tsx`, `node --import tsx`, or `yarn dlx tsx`. The first five auto-fetch `tsx` on demand; only `node --import tsx` requires `tsx` to be installed locally first (`npm i -D tsx`, or `npm i -g tsx` if you cannot reach the npm registry). Bun users can also skip `tsx` entirely and run TypeScript directly via `bun <script>`. Pick whichever your project ships. The canonical runtime decision table lives in the `skills-manager` skill under `Runtime Selection` (only available when working in the full `gg-skills` monorepo).
