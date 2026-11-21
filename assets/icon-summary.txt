@@ -1,0 +1,1 @@
+A branch graph ringed by opposing arrows represents synchronizing a repository and its submodules with a remote.

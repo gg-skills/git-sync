@@ -1,0 +1,1 @@
+Two arrows carry changes between a workspace and its remote while keeping nested repositories in step.
